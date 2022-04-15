@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>BrainWorks</title>
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <!-- Nav Bar -->
+    <nav class="navbar">
+        <a>SukalpBrainworks</a>
+    </nav>
+
+    <main>
+        <!-- form -->
+        <div id="saveform">
+            <form name="google-sheet-post">
+                <input type="text" name="fname" placeholder="First Name">
+                <input type="text" name="lname" placeholder="Last Name">
+                <button type="submit" class="submit">Save</button>
+            </form>
+            Want to Fetch instead? <button class="toggle">Click here!</button>
+        </div>
+
+        <!-- fetch -->
+        <div id="fetchform" class="hidden">
+            <form name="google-sheet-get">
+                <input type="text" name="fname" placeholder="First Name">
+                <button type="submit" class="submit">Save</button>
+                <div id="res"></div>
+            </form>
+            Want to Add instead? <button class="toggle">Click here!</button>
+        </div>
+    </main>
+</body>
+
+<script src="./script.js" async defer></script>
+</body>
+
+</html>
